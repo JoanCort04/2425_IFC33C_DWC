@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Usuario(userName,email,nombre) {
+            this.userName = userName;
+            this.email = email;
+            this.nombre = nombre;
+        }
+
+        var usuario1 = new Usuario("blaserna", "lbe@paucaessnovescifp.cat", "berna")
+        var usuario2 = new Usuario("blaserna", "lbe@paucaessnovescifp.cat", "berna")
+        var usuario3 = new Usuario("blaserna", "lbe@paucaessnovescifp.cat", "berna")
+
+        var usuarios = [usuario1, usuario2, usuario3];
+        // while (do while)
+        var i = 0;
+        while (i<usuarios.length){
+            console.log(usuarios[i].nombre);
+            i++;
+        }
+     
+        // for
+        for (var i = 0; i<usuarios.length; i++) {
+            console.log(usuarios[i].userName);
+        }
+
+        // for in -> iterar las propiedades. 
+        for (var clave in usuarios){
+            console.log(clave);
+        }
+
+        // for of -> lo que da en el 0, 1 y 2. Los valores de cada posición. 
+        for (var usuario of usuarios){
+            console.log(usuario);
+        }
+
+        for (var usuario of usuarios){
+            console.log(usuario.email);
+        }
+
+
+    </script>
+</body>
+</html>

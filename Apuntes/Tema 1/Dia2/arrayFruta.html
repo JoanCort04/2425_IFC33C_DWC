@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var frutas = ["Manzana", "Pera", "Plátano"];
+
+    //Obtener tamaño
+  
+    var tam = frutas.lenght;
+    console.log(tam);
+   
+    //Borrar elemento del array
+    
+    delete frutas[1]; //"undefined". Borra el valor pero no el índice del array.
+    console.log(frutas);
+    frutas.splice(1, 1); //eliminam element de l'array
+    console.log(frutas, frutas[1]);
+
+    // ordenar
+    frutas.sort();
+</script>
+</html>

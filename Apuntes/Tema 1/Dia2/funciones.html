@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function suma(a, b) {
+        return a + b;
+    }
+
+    console.log(suma(2,3));
+
+    // LAS FUNCIONES EN JAVA SON VALORES. 
+    var a = suma(4, 5); // 9
+    console.log(a);
+    var b = suma; // b guarda toda la función suma.
+    var c = b(4, 5);
+    console.log(b);
+    console.log(c);
+
+    // Constructor para un objeto a partir de una función
+    function Persona (nombre, apellidos) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+    }
+
+    persona1 = new Persona("Belén", "Laserna Belenguer"); //Crear objeto que hereda del "Prototipo" con new
+    console.log(persona1);
+
+    // Función anónima, que no tiene nombre
+    var a = function() {
+        return "Hola";
+    }
+
+    var b = function(x) {
+        return "Hola" + x;
+    }
+    
+    // Función flecha
+    var c = (x) => {
+        return "Hola " + x
+    }
+
+    console.log(c);
+    console.log(C("Pepe"));
+
+ 
+
+</script>
+</html>
