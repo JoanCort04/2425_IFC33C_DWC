@@ -64,7 +64,7 @@ function mostrarJson(jsonObj) {
 mostrarJson(jsonObj) 
 */
 
-
+/*
 let escuadron = jsonObj.squadName;
 let ciudad = jsonObj.homeTown;
 let fecha = jsonObj.formed;
@@ -108,3 +108,9 @@ function imprimirHeroe(nombre, edad, identidad, poderes) {
 
     console.log(superHeroe);
 }
+*/
+
+for (let i = 0; i < jsonObj.lenght; i++) {
+  squadName = 
+}
+
