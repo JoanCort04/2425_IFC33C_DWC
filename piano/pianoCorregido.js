@@ -77,3 +77,22 @@ function cercador(partituras, cerca) {
 }
     */
 
+  function cercador(partituras, cerca) {
+    for (let i = 0; i<= (partituras.length - cerca.length); i++){
+        let trobat = 1;
+    }
+    for (let j = 0; j<cerca.length; j++){
+        if (partituras[i+j].melodia.nota !== cerca[j].nota
+            || partituras[i+j].melodia.tipus !== cerca[j].tipus
+        ){
+            trobat = false;
+            break;
+        }
+
+        if (trobat) {
+            resultat.push(partituras[i]);
+        }
+        }
+        
+    }
+  
