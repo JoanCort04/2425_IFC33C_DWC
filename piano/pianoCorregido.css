@@ -2,27 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-#pianoDiv{
-    width: 1000px;
-}
 
-
-body{
-background-image: url(../piano/assets/img/background/background11.jpg);
-width: 1000px;
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
+body {
+    background-image: url(../piano/assets/img/background/background11.jpg);
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -31,23 +31,27 @@ header {
     font-style: normal;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 5%;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
-h3,h4,h5,h6 {
+h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
@@ -56,25 +60,28 @@ li {
     list-style: none;
 }
 
-button{
+button {
     background-color: #d32f2f;
     border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     box-shadow: 0 0 5px 0 black;
     transition-duration: 0.8s;
-}
-button:hover {
-background-color: #9a0007;
+    margin: 0 auto;
 }
 
-main{
-display: flex;
-flex-direction: column;
-align-items: center;
+button:hover {
+    background-color: #9a0007;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main #resultat {
@@ -82,15 +89,16 @@ main #resultat {
     background: white;
     padding: 15px 20px;
     margin: 15px 0 100px 0px;
-    }
+    text-align: center;
+}
 
-main #resultat>div{
+main #resultat > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main #resultat>div h2{
+main #resultat > div h2 {
     margin: 20px 0;
     text-align: center;
 }
@@ -98,13 +106,16 @@ main #resultat>div h2{
 main #resultat ul {
     margin: 20px 0;
     text-align: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
-    
+
 main #resultat ul li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 main #resultat ul li div:first-child {
@@ -112,57 +123,6 @@ main #resultat ul li div:first-child {
     flex-direction: column;
     margin-right: 25px;
 }
-    
-.lyrics {
-    cursor: pointer;
-
-}
-    
-    
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .piano {
     background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
@@ -177,10 +137,8 @@ main #resultat ul li div:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0% auto;
+    margin: 0 auto;
     width: 60%;
-    
-
 }
 
 .key {
@@ -189,6 +147,7 @@ main #resultat ul li div:first-child {
     margin: 0 2px;
     width: 6%;
     max-width: 85px;
+    text-align: center;
 }
 
 .key:active .black-key,
@@ -204,11 +163,11 @@ main #resultat ul li div:first-child {
     box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px rgba(0, 0, 0, 0.5), -3px 4px 6px rgba(0, 0, 0, 0.5);
     display: block;
     height: 300px;
+    margin: 0 auto;
 }
 
 .key .white-key:active,
 .key .white-key.active {
-    box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px #000000, -3px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
     top: -5px;
     height: 295px;
@@ -230,6 +189,7 @@ main #resultat ul li div:first-child {
     right: -40%;
     width: 70%;
     z-index: 10;
+    margin: 0 auto;
 }
 
 .key .black-key:active,
@@ -237,7 +197,3 @@ main #resultat ul li div:first-child {
     border-bottom-width: 3px;
     top: 0;
 }
-
-
-
-
