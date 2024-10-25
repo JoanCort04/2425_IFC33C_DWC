@@ -19,3 +19,11 @@ console.log(v5);
 
 var v6 = document.getRootNode();
 console.log(v6);
+
+var v7 = document.querySelector("#mujer");
+var v8 = document.querySelectorAll(".sexo");
+
+var v9 = document.createElement("h2");
+v9.innerHTML = 'Hola <span style="color: red;">mundo</span>';
+
+document.body.appendChild(v9);

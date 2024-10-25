@@ -32,3 +32,55 @@ function imprimeixTabla() {
 }
 // imprimeixTabla();
 
+
+/* Creating a function is a skill that’ll be useful in many settings, and as you progress,
+you’ll be working on much more complicated functions than this one. 
+But a function that converts units of measure can be pretty handy in multiple professions and industries.
+Let’s start with a conversion from kilometers to miles. The function should include the 
+input in kilometers and return the answer in miles. */
+
+function convertirKilometresAMilles(input) {
+    let resultat = input * 0.621371;
+    console.log(resultat);
+}
+
+/*You can create your own array of numbers but consider 
+trying this problem with a few different sets to verify your solution. 
+Have one array with negative and positive numbers and another with integers and decimals.
+You could also try using arrays of different lengths. 
+If you’re feeling comfortable with this, try the slightly more challenging bonus challenge below.
+Bonus intermediate challenge: Create a function that can return the sum of a particular column or row number in a table.*/
+
+function contarArray(){
+        array1 = [1, 2, 3, 4, 5, -6, 7];
+        array2 = [1, 2, 3.5, -4.5, -5.7, 6, 7];
+        let matriu = [
+            [1, 2, 3], 
+            [4, 5, 6], 
+            [7, 8, 9]   
+        ];
+        let suma = 0; 
+        let suma2 = 0;
+        let suma3 = 0;
+
+        for (let i in array1){
+            suma = suma + array1[i];
+
+        }
+        for (let i in array2){
+            suma2 = suma2 + array2[i];
+
+        }
+        
+        for (let fila of matriu) {
+            let i = 0;
+            suma3 = suma3 + fila[i];  
+            i++;               
+        }
+
+
+        console.log(suma);
+        console.log(suma2);
+        console.log(suma3);
+}
+contarArray();
