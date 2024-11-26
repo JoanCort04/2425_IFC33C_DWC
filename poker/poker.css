@@ -1,0 +1,103 @@
+body {
+    background-image: url(../poker/cards/fondo.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidorCentrat {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    animation: neonText 3s infinite alternate, neonGlow 1.5s infinite alternate;
+    text-align: center;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    background-color: rgba(0, 128, 0, 0.5);
+    height: 350px;
+    border-radius: 100px;
+    animation: neonVerd 10s infinite alternate;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes neonText {
+    0% {
+        color: #00FFFF;
+    }
+
+    25% {
+        color: #FF00FF;
+    }
+
+    50% {
+        color: #FFFF00;
+    }
+
+    75% {
+        color: #00FF00;
+    }
+
+    100% {
+        color: #FF0000;
+    }
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #00FFFF;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF, 0 0 40px #FF00FF;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #00FFFF;
+    }
+}
+
+@keyframes neonVerd {
+    0% {
+        box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, 0.5), 0px 0px 20px 10px rgba(0, 255, 0, 0.4), 0px 0px 30px 15px rgba(0, 255, 0, 0.3);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 10px rgba(0, 255, 0, 0.9), 0px 0px 40px 20px rgba(0, 255, 0, 0.7), 0px 0px 60px 30px rgba(0, 255, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, 0.5), 0px 0px 20px 10px rgba(0, 255, 0, 0.4), 0px 0px 30px 15px rgba(0, 255, 0, 0.3);
+    }
+}
