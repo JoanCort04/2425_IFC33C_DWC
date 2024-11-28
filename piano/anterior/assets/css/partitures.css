@@ -1,0 +1,11 @@
+.taula table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.taula th,
+.taula td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
