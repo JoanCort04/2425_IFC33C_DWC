@@ -30,23 +30,6 @@
 window.onload = function crearTaules() {
   let cos = document.getElementsByTagName("body")[0];
 
-  let navbar = document.createElement("nav");
-  navbar.className = "navbar";
-  navbar.innerHTML = `
-   <ul>
-    <li><a href="#piano">Score Finder</a></li>
-    <li><a href="#">Partitures</a></li>
-    <li><button onclick="iniciarSessio()">Login</button></li>
-  </ul>
-  `;
-
-  cos.appendChild(navbar);
-
-  let novaPartitura = document.createElement("div");
-  novaPartitura.className = "novaPartitura";
-  novaPartitura.innerHTML = "Nova Partitura";
-  cos.appendChild(novaPartitura);
-
   let contenidor = document.createElement("div");
   contenidor.className = "taula";
 
