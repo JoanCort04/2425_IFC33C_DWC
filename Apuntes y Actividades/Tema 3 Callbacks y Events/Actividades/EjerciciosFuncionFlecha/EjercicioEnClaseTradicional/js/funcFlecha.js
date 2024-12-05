@@ -20,15 +20,39 @@
     },
   };
 
- function Usuario(nombre) {
-    this.nombre = nombre; 
-    this.saludarTradicional = function() {
-        console.log(`Hola ${this.nombre}`);
-    };
-    this.saludarFlecha = () => console.log(`Hola, mi nombre es ${this.nombre}`);
+let usuario2 = {
+  nombre: "Carlitos",
+  
+  saludarTradicional: function() {
+    console.log(`Hola ${this.nombre}`);
+  },
+  saludarFlecha: () => {
+
+    console.log(`Hola ${this.nombre}`);
+  }
 }
 
+
+class Usuario {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+
+  saludarTradicional() {
+    console.log(`Hola ${this.nombre}`);
+  }
+  saludarFlecha = () => {
+    console.log(`Hola ${this.nombre}`);
+  }
+}
+
+const Calrlitos  = new Usuario("Carlitos");
+Calrlitos.saludarFlecha();
+Calrlitos.saludarTradicional();
+
+
 let usuario1 = new Usuario("Jaume");
+
 usuario1.saludarFlecha(); 
 usuario1.saludarTradicional(); 
 
@@ -43,3 +67,8 @@ saludarExterno();
 
 let saludarFlechaExterno = usuario1.saludarFlecha;
 saludarFlechaExterno(); 
+
+usuario2.saludarTradicional(); 
+usuario2.saludarFlecha();
+
+//
