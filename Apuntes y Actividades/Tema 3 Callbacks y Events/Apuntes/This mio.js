@@ -5,7 +5,8 @@ let personaJaume = {
 
 const personaRandom = {
   nombre: "Pepito",
-  saludar: function () {
+
+  saludar: function() {
     console.log(`holoi, ${this.nombre}`);
   }
 };
@@ -23,18 +24,9 @@ function saludar(saludació) {
     return `${saludació}, ${this.nombre}`;
 }
 
-
 console.log(saludar.call(personaJaume, "hola"));
 console.log(saludar.apply(personaJaume, ["hola"]));
 
 let saludarSempreAlMateix = saludar.bind(personaJaume);
 console.log(saludarSempreAlMateix("adeu"));
-
-//es referirà al botó
-/*
-const button = document.querySelector("button");
-button.addEventListener("click", function () {
-  console.log(this);
-});
-*/
 

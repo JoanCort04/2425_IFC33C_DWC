@@ -49,3 +49,4 @@ function abrirPopup() {
 function cerrarPopup() {
     pagina.window.close();
 }
+

@@ -16,3 +16,17 @@ window.onload = function crearLlista() {
   let div = document.getElementById("llista");
   div.appendChild(ul);
 };
+
+window.onload = function crearLlista() {
+  let elementos = ["Poma", "Platano", "Pinya", "Pera"];
+
+  let ul = document.createElement("ul");
+  elementos.forEach(function (elemento) {
+    let li = document.createElement("li");
+    li.textContent = elemento;
+    ul.appendChild(li);
+  });
+
+  let div = document.getElementById("llista");
+  div.appendChild(ul);
+};
