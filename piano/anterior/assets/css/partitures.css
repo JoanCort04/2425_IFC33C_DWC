@@ -10,6 +10,8 @@
     background-image: url(../img/background/background11.jpg);
 }
 
+
+
 .taula table {
   margin-top: 10px;
   width: 100%;
@@ -25,13 +27,13 @@
 .taula tr:first-child {
   background-color: white;
   border: 1px solid black;
-  height: 50px; /* or any desired value */
+  height: 50px;
 }
 
 .taula tr:nth-child(2) {
   background-color: whitesmoke;
   border: 1px solid black;
-  height: 30px; /* smaller than the first row */
+  height: 30px; 
 }
 
 .taula tr:nth-child(2n) {
@@ -61,7 +63,8 @@
   background-color: red;
   margin: -8px;
   padding: 10px;
-
+  color: white;
+  text-decoration: none;
 }
 
   nav ul {
@@ -69,6 +72,12 @@
   display: flex; 
   gap: 20px;
   margin-right: 20px;
+  text-decoration: none;
+
+}
+
+nav a {
+  text-decoration: none;
 }
 
  nav ul li a, nav ul button, .novaPartitura {
