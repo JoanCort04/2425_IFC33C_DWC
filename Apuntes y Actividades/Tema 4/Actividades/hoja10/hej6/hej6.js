@@ -1,0 +1,27 @@
+document.addEventListener("DOMContentLoaded", cargaDOM);
+
+function cargaDOM(){
+    let contenedor = document.getElementById("contenedor");
+    let listaBotones = document.querySelectorAll(".boton");
+
+    contenedor.addEventListener("click", clickDiv)
+
+    listaBotones.forEach(boton=>{
+        boton.addEventListener("click", clickBoton);
+    })
+}
+
+function clickDiv(e){
+    if (e.target.classList.contains("boton")){
+        console.log(`Click en ${e.target.textContent}`)
+        e.stopPropagation();
+        e.preventDefault();
+    }
+}
+
+function clickBoton(e){
+    //e.stopPropagation();
+    e.preventDefault();
+    console.log(`Evento detenido en ${e.target.textContent}`)
+
+}
