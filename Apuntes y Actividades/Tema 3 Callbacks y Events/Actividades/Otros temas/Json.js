@@ -117,3 +117,19 @@ const mostraHeroes = (squad) => {
 mostraHeroes(squad);
 
 */
+
+let libro = {
+  "id": "<unique_id>",
+  "name": "<user_name>",
+  "email": "<user_email>",
+  "age": null,
+  "phone": "<user_phone>",
+  "address": {
+    "street": "<street_name>",
+    "city": "<city>",
+    "state": "<state>",
+    "zip": "<zip_code>"
+  },
+  "isActive": true,
+  "registrationDate": "<ISO_date_format>"
+}
